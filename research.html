@@ -47,39 +47,60 @@ Indian Institute of Technology (IIT), Kharagpur, India<a></div>
         <li class="">
           <a class="nav-link" href="publications.html">Publications</a>
         </li>
-<!--         <li class="">
-          <a class="nav-link" href="awards.html">Awards</a>
-        </li> -->
       </ul>
     </div>
   </div>
 </nav>
 
 
-<div class="container" style="margin-top: 50"> 
-  <h3 class="bottomspace">Project 1</h2>
-      Description. Highlights:
-      <ol list-style-type: decimal>             
-        <li class="bottomspace">Highlight 1</li>
 
-        <li class="bottomspace">Highlight 2</li>
-      </ol>  
-  <h3 class="bottomspace">Project 2</h2>
-      Description. Highlights:
-      <ol list-style-type: decimal>             
-        <li class="bottomspace">Highlight 1</li>
-
-        <li class="bottomspace">Highlight 2</li>
-      </ol>  
-  <h3 class="bottomspace">Project 3</h2>
-      Description. Highlights:
-      <ol list-style-type: decimal>             
-        <li class="bottomspace">Highlight 1</li>
-
-        <li class="bottomspace">Highlight 2</li>
-      </ol>  
+<div class="container" style="margin-top: 50">  
+  Our group is investigating several problems related to epidemics. We summarize some of our main findings below.
+  <br>
+  <br>
+  <p style="color:red">Caveat: Our investigation and results are based on mathematical models of epidemics/spreading processes on networks. Mathematical abstractions help us capture important features of complex real-world phenomena, analyze them in a tractable manner and provide high-level insights on their behavior. Nevertheless, these models and abstractions are not perfect and do not capture all the the complexity and heterogeneity present in real-world epidemics. Therefore, while interpreting our results for infectious diseases (such as COVID-19), the above caveat should be kept in mind.</p>
+  <h4 class="bottomspace"><u>Optimal Non-Pharmaceutical Intervention via Feedback from Testing Data</u></h4>
+  In the absence of vaccines and medicines, non-pharmaceutical interventions such as imposing lock-down measures and augmenting healthcare resources are relied on to reduce the growth and spread of epidemics. We have developed a closed-loop approach that combines inference from testing data, learning the epidemic parameters and optimally allocating NPIs to balance the trade-off between epidemic growth rate and (economic) cost of NPIs for the class of <a href="https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology">SIR epidemics</a> on networks.
+  <br>
+  <b>Main findings:</b>
+  <ul>             
+    <li class="bottomspace">We have characterized the equiilbria in discrete-time SIR epidemic dynamics on networks and generalized the notion of reproduction number to the networked epidemic setting.</li>
+    <li class="bottomspace">We have proposed Bayesian inference algorithms that infer the epidemic state from testing data suitably compensating for factors such as mostly high risk symptomatic individuals undergo testing in practice and individuals develop symptoms after an incubation period.</li>
+    <li class="bottomspace">We have formulated tractable optimization problems that use inferred states as feedback for optimal allocation of NPIs subject to constaints on epidemic growth-rate and/or NPI cost. Our mathematical framework captures the emergence of a second wave of infections if NPIs are prematurely withdrawn.</li>
+    <li class="bottomspace">The importance of early testing, accurate inference and regularly adapting NPIs by using feedback from testing data are illustrated.</li>
+    <li class="bottomspace">Policy implication: To control the spread of SIR-type epidemics, NPIs (such as lock-down measures) should be imposed to a varying degree in different nodes of the network and these should be regularly updated based on feedback from testing data after compensating for nonuniform testing policies.
+    </li>
+  </ul>
+  <b>Relevance for COVID-19:</b>
+  <ul>             
+    <li class="bottomspace">While more detailed mathematical models of COVID-19 have been recently developed by many scientists around the world, the mechanism underlying the spread of infection over a network in most of these models are often based on the SIR epidemic model.</li>
+  </ul>
+  <b>Representative Publication:</b>
+  <ul>             
+    <li class="bottomspace">A. R. Hota, J. Godbole, S. K. Singh and P. E. Par&eacute, "A Closed-Loop Framework for Inference, Prediction and Control of SIR Epidemics on Networks," Extended Abstract. Accepted for oral presentation at <a href="https://people.iiis.tsinghua.edu.cn/~huang/netecon20/"><b>NetEcon 2020</b></a>.</li></li>
+  </ul>   
+  <h4 class="bottomspace"><u>Influence of Behavioral Biases on Vaccination Decisions</u></h4>
+      Vaccination is often administred to protect individuals against infectious diseases. However, individuals decide whether or not to vaccinate based on a variety of factors, including their perceived risk of being infected and the cost of vaccination. Behavioral or psychological biases often have a significant influence on how humans perceive risk and make decisions under uncertainty.
+      <br>
+      We examine the influence of behavioral biases (such as the tendency to overestimate low probability events) on the vaccination decisions for the class of <a href="https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology">SIS epidemics</a> on large-scale networks with a structured population in the framework of game theory. 
+      <br>
+      <b>Main findings:</b>
+      <ul>             
+        <li class="bottomspace">If the vaccination cost is not sufficiently small, certain behavioral biases (captured by <a href="https://en.wikipedia.org/wiki/Prospect_theory">prospect theory</a>) cause fewer people to vaccinate.</li>
+        <li class="bottomspace">The above effect is exacerbated in <a href="https://en.wikipedia.org/wiki/Scale-free_network">networks with a power-law degree distribution</a>.</li>
+        <li class="bottomspace">Policy implication: The social and economic cost of lock-down or social distancing needs to sufficiently reduced (adequately compensated); otherwise, these guidelines may not be adhered to in practice. 
+        </li>
+      </ul>
+      <b>Relevance for COVID-19:</b>
+      <ul>             
+        <li class="bottomspace">The SIS epidemic does not fully capture the characteristics of COVID-19 and vaccines have not yet been developed for this disease. Nevertheless, vaccination can be viewed (in our model) as analogous to self-quarantine or maintaining strict social-distancing. Individuals weigh the social and economoic cost of quarantine with the risk of infection. Our findings show that (under suitable assumotions) if the cost of quarantine or social distancing is large, behavioral biases will cause fewer people to follow them.</li>
+      </ul>
+      <b>Representative Publication:</b>
+      <ul>             
+        <li class="bottomspace">A. R. Hota and S. Sundaram, "<a href="https://ieeexplore.ieee.org/document/8636162/">Game-Theoretic Vaccination Against Networked SIS Epidemics and Impacts of Human Decision-Making</a>," IEEE Transactions on Control of Network Systems, vol. 6, no. 4, pages 1461 - 1472, 2019. [<u><a href="https://arxiv.org/abs/1703.08750">arxiv</a></u>]</li>
+      </ul>  
 </div>
-  
+<div class="bg-secondary w-50 mx-auto p-1 my-4"></div>  
 </div>
 
 
